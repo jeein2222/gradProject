@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-zdg1_nxu)c2^kl$qx&9oy@))=)+0#l%o@*_0sbfs7ncq=s%x*w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'meta4music.pythonanywhere.com']
 
 
 # Application definition
