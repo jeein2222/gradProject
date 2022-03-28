@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 from django.utils import timezone
 
-# Create your models here.
+# 사용자가 만든 음악 모델
 class Music(models.Model):
     author=models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title=models.CharField(max_length=200)

@@ -1,0 +1,53 @@
+<!-- 웹사이트 설명페이지 -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include 'music/header.html' %}
+        
+    </head>
+    <body>
+        <!-- Navigation-->
+        {% include 'music/navbar.html' %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{%static 'img/about-bg.jpg'%}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About US</h1>
+                            <span class="subheading">This is what we do.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <style>
+                            @import url('https://fonts.googleapis.com/css2?family=Jua&family=Source+Sans+Pro:wght@200&display=swap');
+                            .jua-font{
+                                font-family: 'Jua', sans-serif;
+                            }
+                        </style>
+                        
+                        <p class="jua-font" style="font-size:19pt">'Music for you'는 딥러닝을 이용한 작사/작곡 웹사이트입니다.</p>
+                        <p class="jua-font" style="color:gray">'딥러닝' 기술을 이용하여 자신만의 '음악'을 만들어볼 수 있는 기회를 제공합니다. 사용자가 그린 그림을 바탕으로 작사, 작곡의 기회를 제공합니다.<br><br>
+                           더불어, 자신만의 곡을 다른 사람과 공유할 수 있습니다. </p>
+                        <p class="jua-font">이 웹사이트를 사용하시려면, 로그인/회원가입을 해주세요😉</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+        {% include 'music/footer.html' %}
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
